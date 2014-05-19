@@ -1,0 +1,60 @@
+/*
+	http://meyerweb.com/eric/tools/css/reset/ 
+	v2.0 | 20110126
+	License: none (public domain)
+*/
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{margin:0; padding:0; border:0; font-size:100%; font:inherit; vertical-align:baseline;}
+
+/* HTML5 display-role reset for older browsers */
+article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display: block;}
+body{line-height: 1;}
+ol,ul{list-style: none;}
+blockquote,q{quotes: none;}
+blockquote:before, blockquote:after, q:before, q:after {content: ''; content: none;}
+table {border-collapse: collapse;	border-spacing: 0;}
+
+/* Defaults */
+*{-webkit-box-sizing:border-box; -moz-box-sizing:border-box; box-sizing:border-box;}
+html{height:100%; width:100%; font-family:Century Gothic, serif; background:#fff; font-size:16px; color:#333;}
+body {height:100%; width:100%; margin:-1px auto 0; padding-top:1px;}
+a,a:active,a:visited,a:hover{color:#333; text-decoration:none;}
+select,input{margin:0;	padding:0; border:0; outline:none; vertical-align:baseline;}
+.clearfix:after{content:""; visibility:hidden; display:block; height:0; clear:both;}
+.wrapper{width:100%; margin:0 auto;}
+/*
+	Colors:
+		Black - #333
+		White - #fff
+		Pink - #f27398
+		Blue - #40aaef
+		Orange - #fba848
+		Green - #58be89
+		home Green - 
+*/
+@media screen
+and (max-width:519px)
+{
+	#home{width:100%; height:100%; background:url('../images/bp.png') center center no-repeat; background-size:cover;}
+		#home #logo{width:90%; height:100%; margin:0 auto; background:url('../images/mini logo.png') center center no-repeat; background-size:contain;}
+		#home #nav{width:100%; position:fixed; top:0; left:0; background:#333;}
+			#home #nav .optional{display:none;}
+			#home #nav ul{width:-webkit-fit-content; margin:0 auto;}
+				#home #nav li{float:left; padding:0.5em 0.75em; margin:0.5em; background:#3a6a32;}
+					#home #nav li a{color:#fff;}
+	#gallery{width:100%; padding:1em 0; background:#333;}
+		#gallery .imageContainer{width:75%; padding:1em; margin:2em auto; background:#fff;}
+			#gallery .imageContainer img{width:100%; margin:1em 0; box-shadow:1px 1px 3px #333;}
+			#gallery .imageContainer span{width:100%; display:block; text-align:left; line-height:1.25em;}
+				#gallery .imageContainer .projName{width:100%; font-size:1.5em;}
+				#gallery .imageContainer .projLoc{width:100%;}
+
+@media screen
+and (min width:520px)
+and (max-width:959px)
+{
+}
+
+@media screen
+and (min-width:960px)
+{
+}
