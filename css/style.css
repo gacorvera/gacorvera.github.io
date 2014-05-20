@@ -35,20 +35,25 @@ select,input{margin:0;	padding:0; border:0; outline:none; vertical-align:baselin
 and (max-width:519px)
 {
 	#home{width:100%; height:100%; background:url('../images/bp.png') center center no-repeat; background-size:cover;}
-		#home #logo{width:90%; height:100%; margin:0 auto; background:url('../images/mini logo.png') center center no-repeat; background-size:contain;}
+		#home #logo{position:relative; width:90%; height:100%; margin:0 auto; /*background:url('../images/mini logo.png') center center no-repeat; background-size:contain;*/}
+			#home #logo img{width:100%; position:absolute; top:25%; margin:0 auto;}
+			#home #logo #mini{display:block;}
+			#home #logo #reg{display:none;}
+			#home #logo #full{display:none;}
 		#home #nav{width:100%; position:absolute; top:0; left:0; background:#333;}
 			#home #nav .optional{display:none;}
 			#home #nav ul{}
 				#home #nav li{float:left; padding:0.5em;}
 					#home #nav li a{color:#fff;}
-	#contact{width:100%; height:100%;}
-	#gallery{width:100%; padding:1em 0; background:#333;}
-		#gallery .imageContainer{width:95%; padding:1em; margin:1em auto 2em; background:#fff;}
-			#gallery .imageContainer img{width:100%;}
-			#gallery .imageContainer span{width:100%; display:block; text-align:left; line-height:1.25em;}
-				#gallery .imageContainer .projName{width:100%; font-size:1.5em;}
-				#gallery .imageContainer .projLoc{width:100%;}
-
+	#contact{width:100%; height:100%; display:none;}
+	#gallery{width:100%; padding:1em 0; background:#e8e8e8;}
+		#gallery .imageContainer{width:95%; padding:0; margin:1em auto 2em; background:#fff; border-radius:0.5em; border:1px solid #ccc; overflow:hidden;}
+			#gallery .imageContainer img{width:100%; border-bottom:1px solid #ccc;}
+			#gallery .imageContainer .imageDetails{width:100%; padding:0.5em 1em;}
+				#gallery .imageContainer .imageDetails span{display:block; line-height:1.5em;}
+					#gallery .imageContainer .imageDetails .projName{width:100%; font-size:1.25em; font-weight:bold;}
+					#gallery .imageContainer .imageDetails .projLoc{width:100%;}
+}
 @media screen
 and (min width:520px)
 and (max-width:959px)
@@ -58,4 +63,23 @@ and (max-width:959px)
 @media screen
 and (min-width:960px)
 {
+	#home{width:100%; height:100%; background:url('../images/bp.png') center center no-repeat; background-size:cover;}
+		#home #logo{position:relative; width:90%; height:100%; margin:0 auto; /*background:url('../images/mini logo.png') center center no-repeat; background-size:contain;*/}
+			#home #logo img{width:100%; position:absolute; top:25%; margin:0 auto;}
+			#home #logo #mini{display:none;}
+			#home #logo #reg{display:none;}
+			#home #logo #full{display:block;}
+		#home #nav{width:100%; position:absolute; top:0; left:0; background:#333;}
+			#home #nav .optional{display:none;}
+			#home #nav ul{}
+				#home #nav li{float:left; padding:0.5em;}
+					#home #nav li a{color:#fff;}
+	#contact{width:100%; height:100%; display:none;}
+	#gallery{width:100%; padding:0.5em 0; background:#e8e8e8;}
+		#gallery .imageContainer{width:32.65%; padding:0; float:left; margin:0.5em 0 0.5em 0.5%; background:#fff; border-radius:0.5em; border:1px solid #ccc; overflow:hidden;}
+			#gallery .imageContainer img{width:100%; border-bottom:1px solid #ccc;}
+			#gallery .imageContainer .imageDetails{width:100%; padding:0.5em 1em;}
+				#gallery .imageContainer .imageDetails span{display:block; line-height:1.5em;}
+					#gallery .imageContainer .imageDetails .projName{width:100%; font-size:1.25em; font-weight:bold;}
+					#gallery .imageContainer .imageDetails .projLoc{width:100%;}
 }
