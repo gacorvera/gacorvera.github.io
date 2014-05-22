@@ -15,8 +15,8 @@ table {border-collapse: collapse;	border-spacing: 0;}
 
 /* Defaults */
 *{-webkit-box-sizing:border-box; -moz-box-sizing:border-box; box-sizing:border-box;}
-html{height:100%; width:100%; font-family:Century Gothic, serif; background:#fff; font-size:16px; color:#333;}
-body {height:100%; width:100%; margin:-1px auto 0; padding-top:1px;}
+html{height:100%; width:100%; font-family:Century Gothic, serif;  background:#e8e8e8; font-size:16px; color:#333;}
+body {height:100%; width:100%;}
 a,a:active,a:visited,a:hover{color:#333; text-decoration:none;}
 select,input{margin:0;	padding:0; border:0; outline:none; vertical-align:baseline;}
 .clearfix:after{content:""; visibility:hidden; display:block; height:0; clear:both;}
@@ -35,7 +35,7 @@ select,input{margin:0;	padding:0; border:0; outline:none; vertical-align:baselin
 and (max-width:519px)
 {
 	#home{width:100%; height:100%; background:url('../images/bp.png') center center no-repeat; background-size:cover;}
-		#home #logo{position:relative; width:90%; height:100%; margin:0 auto; /*background:url('../images/mini logo.png') center center no-repeat; background-size:contain;*/}
+		#home #logo{position:relative; width:90%; height:100%; margin:0 auto;}
 			#home #logo img{width:100%; position:absolute; top:25%; margin:0 auto;}
 			#home #logo #mini{display:block;}
 			#home #logo #reg{display:none;}
@@ -46,8 +46,9 @@ and (max-width:519px)
 				#home #nav li{float:left; padding:0.5em;}
 					#home #nav li a{color:#fff;}
 	#contact{width:100%; height:100%; display:none;}
-	#gallery{width:100%; padding:1em 0; background:#e8e8e8;}
-		#gallery .imageContainer{width:95%; padding:0; margin:1em auto 2em; background:#fff; border-radius:0.5em; border:1px solid #ccc; overflow:hidden;}
+	#gallery{width:100%; padding:1em 0;}
+		#gallery h2{font-size:2em; font-weight:bold; text-align:center;}
+		#gallery .imageContainer{width:95%; padding:0; margin:2em 2.5%; background:#fff; border-radius:0.5em; border:1px solid #ccc; overflow:hidden;}
 			#gallery .imageContainer img{width:100%; border-bottom:1px solid #ccc;}
 			#gallery .imageContainer .imageDetails{width:100%; padding:0.5em 1em;}
 				#gallery .imageContainer .imageDetails span{display:block; line-height:1.5em;}
@@ -64,20 +65,22 @@ and (max-width:959px)
 and (min-width:960px)
 {
 	#home{width:100%; height:100%; background:url('../images/bp.png') center center no-repeat; background-size:cover;}
-		#home #logo{position:relative; width:90%; height:100%; margin:0 auto; /*background:url('../images/mini logo.png') center center no-repeat; background-size:contain;*/}
-			#home #logo img{width:100%; position:absolute; top:25%; margin:0 auto;}
+		#home #logo{width:100%; height:100%; margin-top:-1px; padding-top:1px;}
+			#home #logo img{width:100%; max-width:960px; margin:15em auto 0;}
 			#home #logo #mini{display:none;}
 			#home #logo #reg{display:none;}
 			#home #logo #full{display:block;}
-		#home #nav{width:100%; position:absolute; top:0; left:0; background:#333;}
-			#home #nav .optional{display:none;}
-			#home #nav ul{}
-				#home #nav li{float:left; padding:0.5em;}
-					#home #nav li a{color:#fff;}
+		#home #nav{width:100%; height:auto; position:fixed; top:0; left:0;background:rgba(255,255,255,0.75);}
+			#home #nav .optional{}
+			#home #nav ul{width:100%; max-width:960px; margin:0 auto;}
+				#home #nav li{float:left;}
+					#home #nav li a{padding:1em; display:block; color:#333;}
+						#home #nav li a:hover{background:#fff;}
 	#contact{width:100%; height:100%; display:none;}
-	#gallery{width:100%; padding:0.5em 0; background:#e8e8e8;}
-		#gallery .imageContainer{width:32.65%; padding:0; float:left; margin:0.5em 0 0.5em 0.5%; background:#fff; border-radius:0.5em; border:1px solid #ccc; overflow:hidden;}
-			#gallery .imageContainer img{width:100%; border-bottom:1px solid #ccc;}
+	#gallery{width:100%; max-width:1200px; padding:0.5em 0; margin:0 auto;}
+		#gallery h2{line-height:2em; font-size:3em; font-weight:bold; text-align:center;}
+		#gallery .imageContainer{width:32%; padding:0; float:left; margin:0.66%; background:#fff; border-radius:0.5em; border:1px solid #ccc; overflow:hidden;}
+				#gallery .imageContainer img{width:100%;}
 			#gallery .imageContainer .imageDetails{width:100%; padding:0.5em 1em;}
 				#gallery .imageContainer .imageDetails span{display:block; line-height:1.5em;}
 					#gallery .imageContainer .imageDetails .projName{width:100%; font-size:1.25em; font-weight:bold;}
