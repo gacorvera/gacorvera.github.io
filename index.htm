@@ -73,5 +73,19 @@
 				</div>
 			</div>
 		</div>
+		<script>
+			$(window).scroll(function()
+			{
+				//$('.callToAction').html($('body').scrollTop());
+				if($('body').scrollTop() > 200)
+				{
+					$('#nav').addClass('minimize');
+				}
+				else
+				{
+					$('#nav').removeClass('minimize');
+				}
+			});
+		</script>
 	</body>
 </html>

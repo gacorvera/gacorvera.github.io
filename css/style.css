@@ -70,14 +70,15 @@ and (min-width:960px)
 			#home #logo #mini{display:none;}
 			#home #logo #reg{display:none;}
 			#home #logo #full{display:block;}
-		#home #nav{width:100%; height:auto; position:fixed; top:0; left:0;background:rgba(255,255,255,0.75);}
+		#home #nav{width:100%; height:auto; position:fixed; top:0; left:0; padding:1em 0; background:rgba(255,255,255,0.75);}
 			#home #nav .optional{}
+				.minimize{padding:0.25em 0 !important;}
 			#home #nav ul{width:100%; max-width:960px; margin:0 auto;}
 				#home #nav li{float:left;}
-					#home #nav li a{padding:1em; display:block; color:#333;}
+					#home #nav li a{padding:0 1em; display:block; color:#333;}
 						#home #nav li a:hover{background:#fff;}
 	#contact{width:100%; height:100%; display:none;}
-	#gallery{width:100%; max-width:1200px; padding:0.5em 0; margin:0 auto;}
+	#gallery{width:100%; max-width:1200px; min-height:100%; padding:0.5em 0; margin:0 auto;}
 		#gallery h2{line-height:2em; font-size:3em; font-weight:bold; text-align:center;}
 		#gallery .imageContainer{width:32%; padding:0; float:left; margin:0.66%; background:#fff; border-radius:0.5em; border:1px solid #ccc; overflow:hidden;}
 				#gallery .imageContainer img{width:100%;}
