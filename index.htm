@@ -13,77 +13,85 @@
 	<body>
 		<div id='home' class='clearfix'>
 			<div id='logo'>
-				<img id='mini' src='images/logo_mini.png'>
-				<img id='reg' src='images/logo_normal.png'>
-				<img id='full' src='images/logo_full.png'>
+				<img id='mini' class='gacorvera' src='images/logo_mini.png'>
+				<img id='reg' class='gacorvera' src='images/logo_normal.png'>
+				<img id='full' class='gacorvera' src='images/logo_full.png'>
+				<div id='about'>
+					<p><span class='emp'>We are</span> a <span class='optional'>Filipino engineering and </span>construction company <span class='emp'>dedicated in</span> providing <span class='emp'>you</span> our expertise <span class='optional'>and resources</span> in <span class='optional'>the field of engineering and </span>construction.</p>
+					<p><span class='emp'>How may we help?<span></p>
+					<ul id='contact'>
+						<li class='clearfix'>
+							<img class='icon' src='images/icon_phone.png'>
+							441-2641 • 294-6386 • 0929-877-0626
+						</li>
+						<li class='clearfix'>
+							<img class='icon' src='images/icon_email.png'>
+							<a href='mailto:admin@gacorvera.com' target='_blank'>admin@gacorvera.com</a>
+						</li class='clearfix'>
+						<li>
+							<img class='icon' src='images/icon_mail.png'>
+							<a href='https://goo.gl/maps/L20R3' target='_blank'>Rm 307 / 203, Capitol Masonic Bldg., #35 Matalino St., Diliman, QC</a>
+						</li>
+					</ul>
+				</div>
 			</div>
 			<div id='nav'>
 				<ul class='clearfix'>
-					<li class='optional'><a href='#home' title='Home'>Home</a></li>
-					<li class='optional'><a href='#about' title='About'>About</a></li>
+					<li><a href='#home' title='Home'>Home</a></li>
 					<li><a href='#gallery' title='Gallery'>Gallery</a></li>
-					<li class='callToAction'><a href='#contact' title='Contact'>Contact</a></li>
 				</ul>
 			</div>
 		</div>
-		<div id='about' class='clearfix'>
-		</div>
-		<div id='contact' class='clearfix'>
-			<ul class='clearfix'>
-				<li>441-2641</li>
-				<li>294-6386</li>
-				<li>admin@gacorvera.com</li>
-			</ul>
-		</div>
 		<div id='gallery' class='clearfix'>
 			<h2>Gallery</h2>
-			<div class='imageContainer clearfix'>
-				<img src='images/p/affbatangas.jpg'>
-				<div class='imageDetails'>
-					<span class='projName'>All Flip Flops</span>
-					<span class='projLoc'>Batangas</span>
+			<div id='galleryContainer' class='clearfix'>
+				<div class='imageContainer clearfix'>
+					<img src='images/p/affbatangas.jpg'>
+					<div class='imageDetails'>
+						<span class='projName'>All Flip Flops</span>
+						<span class='projLoc'>Batangas</span>
+					</div>
 				</div>
-			</div>
-			<div class='imageContainer clearfix'>
-				<img src='images/p/affboracay.jpg'>
-				<div class='imageDetails'>
-					<span class='projName'>All Flip Flops</span>
-					<span class='projLoc'>Boracay</span>
+				<div class='imageContainer clearfix'>
+					<img src='images/p/affboracay.jpg'>
+					<div class='imageDetails'>
+						<span class='projName'>All Flip Flops</span>
+						<span class='projLoc'>Boracay</span>
+					</div>
 				</div>
-			</div>
-			<div class='imageContainer clearfix'>
-				<img src='images/p/artofscentrw.jpg'>
-				<div class='imageDetails'>
-					<span class='projName'>Art of Scent</span>
-					<span class='projLoc'>Resorts World</span>
+				<div class='imageContainer clearfix'>
+					<img src='images/p/artofscentrw.jpg'>
+					<div class='imageDetails'>
+						<span class='projName'>Art of Scent</span>
+						<span class='projLoc'>Resorts World</span>
+					</div>
 				</div>
-			</div>
-			<div class='imageContainer clearfix'>
-				<img src='images/p/asicsg3.jpg'>
-				<div class='imageDetails'>
-					<span class='projName'>Asics</span>
-					<span class='projLoc'>Glorietta 3</span>
+				<div class='imageContainer clearfix'>
+					<img src='images/p/asicsg3.jpg'>
+					<div class='imageDetails'>
+						<span class='projName'>Asics</span>
+						<span class='projLoc'>Glorietta 3</span>
+					</div>
 				</div>
-			</div>
-			<div class='imageContainer clearfix'>
-				<img src='images/p/nbmarquee.jpg'>
-				<div class='imageDetails'>
-					<span class='projName'>New Balance</span>
-					<span class='projLoc'>Marquee Mall</span>
+				<div class='imageContainer clearfix'>
+					<img src='images/p/nbmarquee.jpg'>
+					<div class='imageDetails'>
+						<span class='projName'>New Balance</span>
+						<span class='projLoc'>Marquee Mall</span>
+					</div>
 				</div>
 			</div>
 		</div>
 		<script>
 			$(window).scroll(function()
 			{
-				//$('.callToAction').html($('body').scrollTop());
-				if($('body').scrollTop() > 200)
+				if($('body').scrollTop() > 50)
 				{
-					$('#nav').addClass('minimize');
+					$('#nav a').addClass('minimize');
 				}
 				else
 				{
-					$('#nav').removeClass('minimize');
+					$('#nav a').removeClass('minimize');
 				}
 			});
 		</script>
